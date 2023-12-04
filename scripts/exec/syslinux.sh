@@ -20,7 +20,7 @@ ln -s $TFTP_PATH/syslinux/modules/$TRG_NME/* $TFTP_PATH/syslinux/
 [ -L $TFTP_PATH/pxelinux ] && rm $TFTP_PATH/pxelinux
 
 # Creating new ones
-ln -s ../../syslinux/pxelinux.0 ../../pxelinux.0
-ln -s ../../pxelinux.0 ../../pxelinux
+ln -s syslinux/pxelinux.0 ../../pxelinux.0
+ln -s pxelinux.0 ../../pxelinux
 
 . ./common/clean.sh
