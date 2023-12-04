@@ -44,7 +44,7 @@ make install # Systemd only
 
 - Install dependencies
 ```
-sudo apt-get -y install git tftpd-hpa unzip wget curl p7zip-full xzip xz-utils cpio
+sudo apt-get -y install git tftpd-hpa unzip wget curl p7zip-full xzip xz-utils cpio syslinux-common syslinux-efi pxelinux
 ```
 
 - Clone this repository, I recomend you clone into your home path.
