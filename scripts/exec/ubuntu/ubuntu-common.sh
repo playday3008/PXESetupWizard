@@ -15,4 +15,11 @@ cd $PRE_PATH
 TRG_PATH=$TFTP_PATH/boot/ubuntu-$REL/ubuntu-installer/$ARCH
 [ ! -d $TRG_PATH ] && mkdir $TRG_PATH -p
 rsync -avP $TMP/$TRG_PKG/ $TRG_PATH --delete-after
+
+# Link libcom32.c32 from syslinux to ubuntu-$REL (shitty bugfix, ig)
+OLD_PWN=`pwd`
+cd $TFTP_PATH/boot/ubuntu-$REL
+ln -s ../../syslinux/modules/bios/libcom32.c32 libcom32.c32
+cd $OLD_PWN
+
 . ./common/clean.sh
