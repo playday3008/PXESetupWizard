@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Temp paths and files
-export SRC_PKG="http://ftp.us.debian.org/debian/dists/$REL/main/installer-$ARCH/current/images/netboot/debian-installer/$ARCH/"
+export SRC_PKG="http://ftp.debian.org/debian/dists/$REL/main/installer-$ARCH/current/images/netboot/debian-installer/$ARCH/"
 export TRG_NME="debian"
 export TRG_PKG=$TRG_NME
 
