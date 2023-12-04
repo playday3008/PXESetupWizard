@@ -139,7 +139,6 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 ### More GNU/Linux Distributions
 - [GParted](https://gparted.org/)
 - [Kali Linux](https://www.kali.org/)
-- [CoreOS](https://coreos.com)
 - [OpenWRT](https://openwrt.org/)
 - [ProxmoxVE](https://proxmox.com/) (It neets to be downloaded manually) [See](https://github.com/morph027/pve-iso-2-pxe)
 
