@@ -8,16 +8,16 @@ source ../config.sh
 exit 0
 
 # Temp paths and files
-OPENWRT_VNUM="18.06.4"
-export SRC_PKG="http://downloads.openwrt.org/releases/${OPENWRT_VNUM}/targets/x86/64/openwrt-${OPENWRT_VNUM}-x86-64-combined-squashfs.img"
+OPENWRT_VNUM="23.05.2"
+export SRC_PKG="https://downloads.openwrt.org/releases/${OPENWRT_VNUM}/targets/x86/64/openwrt-${OPENWRT_VNUM}-x86-64-generic-squashfs-combined.img.gz"
 export TRG_NME="openwrt"
-export TRG_PKG=$TRG_NME".img"
+export TRG_PKG=$TRG_NME".img.gz"
 
 # Download syslinux and deploy it
 . ./common/download.sh
 TRG_PATH=$TFTP_PATH/boot/$TRG_NME
 [ ! -d $TRG_PATH ] && mkdir $TRG_PATH -p
-cp -r $TMP/$TRG_PKG $TFTP_PATH/boot/$TRG_NME
+gunzip -c $TMP/$TRG_PKG > $TFTP_PATH/boot/$TRG_NME
 
 # Clean
 . ./common/clean.sh
