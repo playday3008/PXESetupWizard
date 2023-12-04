@@ -5,9 +5,10 @@ cd $(dirname "$0")
 . ../config.sh
 
 # Temp paths and files
-REL="1.0.0-3"
-export SRC_PKG="http://downloads.sourceforge.net/project/gparted/gparted-live-stable/${REL}/gparted-live-${REL}-amd64.zip"
-export TRG_NME="gparted"
+REL="1.5.0-6"
+ARCH="i686-pae"
+export SRC_PKG="http://downloads.sourceforge.net/project/gparted/gparted-live-stable/${REL}/gparted-live-${REL}-${ARCH}.zip"
+export TRG_NME="gparted-${ARCH}"
 export TRG_PKG=$TRG_NME".zip"
 
 # Download and deploy it
