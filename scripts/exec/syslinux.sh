@@ -8,8 +8,8 @@ source ../config.sh
 rm -rf $TFTP_PATH/syslinux/*
 
 # Use local syslinux and deploy it
-ln -s /usr/lib/syslinux/* $TFTP_PATH/syslinux/
-ln -s /usr/lib/PXELINUX/* $TFTP_PATH/syslinux/
+cp -r /usr/lib/syslinux/* $TFTP_PATH/syslinux/
+cp -r /usr/lib/PXELINUX/* $TFTP_PATH/syslinux/
 
 # Use bios folder as default
 TRG_NME="bios"
