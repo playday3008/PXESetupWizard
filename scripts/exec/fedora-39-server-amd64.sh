@@ -5,7 +5,7 @@ cd $(dirname "$0")
 source ../config.sh
 
 # Temp paths and files
-REL="38"
+REL="39"
 ARCH="x86_64"
 export SRC_PKG="https://download.fedoraproject.org/pub/fedora/linux/releases/${REL}/Server/${ARCH}/os/images/pxeboot/"
 export TRG_NME="fedora"
