@@ -13,7 +13,10 @@ cp -r /usr/lib/PXELINUX/* $TFTP_PATH/syslinux/
 
 # Use bios folder as default
 TRG_NME="bios"
-ln -s modules/$TRG_NME/* ../../syslinux/
+# For each file in syslinux/modules/$TRG_NME create a symlink in syslinux
+for file in $TFTP_PATH/syslinux/modules/$TRG_NME/*; do
+    ln -s modules/$TRG_NME/$(basename $file) ../../syslinux/$(basename $file)
+done
 
 # Remove existing symlinks
 [ -L $TFTP_PATH/pxelinux.0 ] && rm $TFTP_PATH/pxelinux.0
