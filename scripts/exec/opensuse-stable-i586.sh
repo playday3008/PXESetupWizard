@@ -5,8 +5,8 @@ cd $(dirname "$0")
 source ../config.sh
 
 # Temp paths and files
-export SRC_PKG="https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso"
-export TRG_NME="openSUSE-Tumbleweed-x86_64"
+export SRC_PKG="https://download.opensuse.org/ports/i586/tumbleweed/iso/openSUSE-Tumbleweed-LegacyX86-NET-i586-Current.iso"
+export TRG_NME="openSUSE-Tumbleweed-i586"
 export TRG_PKG=$TRG_NME".iso"
 
 # Download syslinux and deploy it
