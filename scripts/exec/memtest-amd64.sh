@@ -16,6 +16,6 @@ export TRG_PKG=$TRG_NME".binaries.zip"
 . ./common/download.sh
 unzip $TMP/$TRG_PKG
 [ ! -d $TFTP_PATH/boot/memtest ] && mkdir $TFTP_PATH/boot/memtest
-mv $TMP/$TRG_NME".bin" $TFTP_PATH/boot/memtest/memtest
+mv $TMP/$TRG_NME".bin" $TFTP_PATH/boot/memtest/$TRG_NME
 
 . ./common/clean.sh
