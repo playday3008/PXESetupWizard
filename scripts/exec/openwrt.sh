@@ -4,9 +4,6 @@
 cd $(dirname "$0")
 source ../config.sh
 
-# Disabled because of unavailability of download
-exit 0
-
 # Temp paths and files
 OPENWRT_VNUM="23.05.2"
 export SRC_PKG="https://downloads.openwrt.org/releases/${OPENWRT_VNUM}/targets/x86/64/openwrt-${OPENWRT_VNUM}-x86-64-generic-squashfs-combined.img.gz"
