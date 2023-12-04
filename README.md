@@ -158,7 +158,6 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 - [VMWare ESXi](https://my.vmware.com/web/vmware/evalcenter?p=free-esxi6) (It needs to be downloaded manually)
 
 ### Boot Loaders
-- [Charmeleon](http://chameleon.osx86.hu/) (EFI)
 - [GAG](http://gag.sourceforge.net/) Graphical Boot Manager
 
 ### Other Tools
