@@ -14,7 +14,7 @@ export TRG_PKG=$TRG_NME".binaries.zip"
 
 # Create tmp path
 . ./common/download.sh
-unzip $TMP/$TRG_PKG
+unzip $TMP/$TRG_PKG -d $TMP
 [ ! -d $TFTP_PATH/boot/memtest ] && mkdir $TFTP_PATH/boot/memtest
 mv $TMP/$TRG_NME".bin" $TFTP_PATH/boot/memtest/$TRG_NME
 
